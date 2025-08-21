@@ -29,8 +29,7 @@ A modern, responsive personal portfolio website showcasing my professional exper
 
 ## Contact
 
-- Email: omariij24@gmail.com
-- LinkedIn: https://www.linkedin.com/in/omari-nyarko/
-- GitHub: https://github.com/omarionnn
-- Instagram: https://www.instagram.com/omarion_n/
-- YouTube: https://www.youtube.com/@SWEPrep
+- Email: kbn3@calvin.edu
+- LinkedIn: https://www.linkedin.com/in/kofibaahnyarko/
+- GitHub: https://github.com/KofiBaahNyarko
+
