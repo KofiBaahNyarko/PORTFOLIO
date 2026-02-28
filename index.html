@@ -1,216 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <a href="#home" class="profile-link">
-                    <img src="profile.JPG" alt="Portrait of Kofi Baah Nyarko" class="profile-image">
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#home" class="profile-link">
+          <img src="profile.JPG" alt="Portrait of Kofi Baah Nyarko" class="profile-image" />
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section active">
+      <div class="container">
+        <div class="content" data-aos="fade-up">
+          <div class="hero-section">
+            <h1 class="main-title">Kofi Baah Nyarko</h1>
+            <div class="roles">
+              <span class="role">Computer Science</span>
+            </div>
+
+            <div class="about-me">
+              <p>
+                Hi, I’m Kofi. I'm a Calvin University student who enjoys solving real problems with a mix of analysis,
+                communication, and building practical solutions. I’ve worked on projects that involve research,
+                data-driven decision making, and presenting results clearly to different audiences. I’m always looking
+                for opportunities where I can learn fast, contribute to a team, and create measurable impact.
+              </p>
+              <p>I'd love to connect with you — feel free to reach out!</p>
+
+              <!-- FIXED: single email-icons container with two links -->
+              <div class="email-icons">
+                <a href="mailto:kbn3@calvin.edu" aria-label="Calvin Email">
+                  <i class="fas fa-envelope"></i> kbn3@calvin.edu
                 </a>
+                <a href="mailto:nyarkokofi292@gmail.com" aria-label="Personal Email">
+                  <i class="fas fa-envelope"></i> nyarkokofi292@gmail.com
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/kofibaahnyarko/" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/KofiBaahNyarko" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+
+            </div> <!-- /about-me -->
+          </div> <!-- /hero-section -->
+        </div> <!-- /content -->
+      </div> <!-- /container -->
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="content" data-aos="fade-up">
+          <div class="resume-section">
+            <h2 class="section-title">Resume</h2>
+
+            <div class="education" data-aos="fade-up">
+              <h3>Education</h3>
+              <div class="education-item">
+                <h4>Calvin University – Grand Rapids, MI</h4>
+                <p class="degree">Bachelors of Science in Computer Science</p>
+                <p class="graduation-date">May 2027</p>
+                <p class="coursework">
+                  Relevant coursework: Data Structures & Algorithms, Distributed Computing Systems, Operating Systems, Networking, Object-Oriented Programming, Web Technologies, Human Centered AI
+                </p>
+              </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
 
-    <main>
-        <section id="home" class="section active">
-            <div class="container">
-                <div class="content" data-aos="fade-up">
-                    <div class="hero-section">
-                        <h1 class="main-title">Kofi Baah Nyarko</h1>
-                        <div class="roles">
-                            <span class="role">Software Engineer</span>
-                        </div>
-                        
-                        <div class="about-me">
-                            <p>Hello, I'm Kofi, a Computer Science Student at Calvin University, pursuing a career in Software Engineering. I love coding, problem solving and collaborating with others.</p>
-                            <p>I'd love to connect with you, feel free to reach out!</p>
-                            <div class="email-icons">
-                                <a href="mailto:kbn3@calvin.edu" aria-label="Calvin Email">
-                                  <i class="fas fa-envelope"></i> kbn3@calvin.edu
-                                </a>
-                              </div>
-                              
-
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/kofibaahnyarko/" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/KofiBaahNyarko" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-
-                            </a>
-                        </div>
-                    </div>
+            <div class="skills" data-aos="fade-up">
+              <h3>Skills & Certifications</h3>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4>Languages</h4>
+                  <p>Python, Java, C++, C#, R, SQL</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="resume" class="section">
-            <div class="container">
-                <div class="content" data-aos="fade-up">
-                    <div class="resume-section">
-                        <h2 class="section-title">Resume</h2>
-                        
-                        <div class="education" data-aos="fade-up">
-                            <h3>Education</h3>
-                            <div class="education-item">
-                                <h4>Calvin University – Grand Rapids, MI</h4>
-                                <p class="degree">Bachelors of Science in Computer Science </p>
-                                <p class="graduation-date">May 2027</p>
-                                <p class="coursework">Relevant coursework: Applied Computing, Intro to Data Structures, Intro to Engineering Design, Networking, Discrete Math 1 & 2, NLP, Object Oriented Programming, Distributed Computing Systems, Web Technologies</p>
-                            </div>
-                        </div>
-
-                        <div class="skills" data-aos="fade-up">
-                            <h3>Skills & Certifications</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <h4>Languages</h4>
-                                    <p>Python, Java, C++, C#</p>
-                                </div>
-                                <div class="skill-category">
-                                    <h4>Technologies</h4>
-                                    <p>Github, AWS, Linus, Kafka, NET, Django, TensorFlow, React, MySQL</p>
-                                </div>
-                                <div class="skill-category">
-                                    <h4>Soft Skills</h4>
-                                    <p>Communication, Teamwork, Problem Solving, Leadership</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Work Experience" data-aos="fade-up">
-                            <h3>Work Experience</h3>
-                            
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h4>Web App Developer</h4>
-                                    <p class="company">Socialize</p>
-                                    <p class="date">May 2025 – Present</p>
-                                </div>
-                                <ul>
-                                    <li>Engineered a social networking platform using Flask and Bootstrap 5, achieving a 30% improvement in page load times and a 25% increase in user engagement through real-time interactions.</li>
-                                    <li>Integrated anonymous user profiles, post creation, likes, retweets, and messaging features, leading to a 50% rise in user activity and a 35% growth in user retention.</li>
-                                </ul>
-                            </div>
-
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h4>Group Visit Assistant</h4>
-                                    <p class="company">Calvin University Admissions | Grand Rapids,MI</p>
-                                    <p class="date">September 2024 – Present</p>
-                                </div>
-                                <ul>
-                                    <li>Delivered clear, engaging, and technically-structured presentations to diverse audiences of up to 30 prospective students, demonstrating strong communication skills essential for cross-functional collaboration.</li>
-                                    <li> Maintained high performance and professionalism while managing multiple simultaneous campus tours or visits, quickly responding to unexpected changes and ensuring a positive experience for groups of up to 20+ students and families.</li>
-                                    <li> Assisted in the preparation and execution of over 25 admissions events, managing check-in processes and guest materials to support a seamless experience for attendees.</li>
-                                </ul>
-                            </div>
-
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h4> Software Engineer </h4>
-                                    <p class="company">Forage | Goldman Sachs Virtual Software Engineering Job Simulation | Remote </p>
-                                    <p class="date"> March 2025</p>
-                                </div>
-                                <ul>
-                                    <li>Completed a real-world cybersecurity simulation, identifying 3+ critical vulnerabilities in outdated password hashing protocols using tools such as Hashcat.</li>
-                                    <li>Delivered actionable security recommendations aligned with organizational risk policies, demonstrating the ability to translate complex findings into practical solutions for non-technical stakeholders.</li>
-                                    <li>Drafted a structured technical report recommending modern hashing algorithms and strengthened password policies, showcasing technical writing and security awareness.</li>
-                                </ul>
-                            </div>
-                         <div class="Leadership Experience" data-aos="fade-up">
-                                <h3>Leadership Experience</h3>
-
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h4>Vice President</h4>
-                                    <p class="company">National Society of Black Engineers | Grand Rapids, MI</p>
-                                    <p class="date">May 2025 – Present</p>
-                                </div>
-                                <ul>
-                                    <li>Responsible for overseeing chapter operations and supporting a membership base of 30+ Black STEM students, with the goal of increasing engagement and retention by 25%. </li>
-                                    <li>Tasked with representing the Calvin chapter at regional and national conferences, building relationships with alumni and recruiters to expand internship opportunities.</li>
-                                </ul>
-                            </div>
-
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h4>Team Leader</h4>
-                                    <p class="company">Calvin University Student Senate | Grand Rapids, MI</p>
-                                    <p class="date">May 2024 – Present</p>
-                                </div>
-                                <ul>
-                                    <li>Led a team of 6 senators to advocate for student interests, implement policy changes, and enhance campus initiatives.</li>
-                                    <li>Spearheaded 8 student-led initiatives, addressing key campus concerns such as student services, academic policies, and diversity efforts.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-category">
+                  <h4>Technologies</h4>
+                  <p>GitHub, AWS, Linux, Kafka, .NET, Django, TensorFlow, React, MySQL</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="content" data-aos="fade-up">
-                    <div class="projects-section">
-                        <h2 class="section-title">Projects</h2>
-                        
-                        <div class="projects-grid">
-                            <div class="project-card" data-aos="fade-up">
-                                <div class="project-content">
-                                    <h3 class="project-title">Socialize</h3>
-                                    <div class="project-role">Web App Developer</div>
-                                    <div class="project-description">
-                                        <ul>
-                                            <li>Built Socialize, an anonymous-friendly social networking app using Flask 3, SQLAlchemy 2, and Bootstrap 5; responsive UI with posts, image uploads, likes, and reposts.</li>
-                                            <li>Implemented real-time direct messages with Flask-SocketIO (WebSockets) including online status and live updates.</li>
-                                            <li>Designed a relational schema (users, profiles, posts, likes, reposts, messages) and managed migrations with Flask-Migrate/Alembic; SQLite locally with Postgres compatibility.</li>
-                                            <li>Added authentication and session management with Flask-Login; secured forms and APIs with Flask-WTF CSRF.</li>
-                                            <li>Integrated image handling via Pillow (validation/resize) and static asset pipeline; documented setup in a developer-friendly README.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="project-tech">
-                                        <span class="tech-tag">Flask</span>
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">SQLAlchemy</span>
-                                        <span class="tech-tag">Bootstrap 5</span>
-                                    </div>
-                                    <a href="https://github.com/KofiBaahNyarko/Socialize"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-link"
-                                    aria-label="Open Socialize project on GitHub">
-                                   <i class="fas fa-external-link-alt"></i> View Project
-                                 </a>                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-category">
+                  <h4>Soft Skills</h4>
+                  <p>Communication, Teamwork, Problem Solving, Leadership</p>
                 </div>
+              </div>
             </div>
-        </section>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="script.js"></script>
+            <!-- FIXED: removed spaces in class name -->
+            <div class="work-experience" data-aos="fade-up">
+              <h3>Work Experience</h3>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h4>Web App Developer</h4>
+                  <p class="company">Socialize</p>
+                  <p class="date">May 2025 – Present</p>
+                </div>
+                <ul>
+                  <li>Engineered a social networking platform using Flask and Bootstrap 5, improving performance and user engagement through real-time interactions.</li>
+                  <li>Integrated anonymous profiles, posting, likes, reposts, and messaging features to support higher user activity and retention.</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h4>Group Visit Assistant</h4>
+                  <p class="company">Calvin University Admissions | Grand Rapids, MI</p>
+                  <p class="date">September 2024 – Present</p>
+                </div>
+                <ul>
+                  <li>Delivered clear, engaging presentations to diverse audiences of up to 30 prospective students, supporting cross-functional communication.</li>
+                  <li>Managed multiple simultaneous visits and adapted quickly to changes to ensure a strong visitor experience for groups of 20+ students and families.</li>
+                  <li>Assisted with 25+ admissions events, coordinating check-ins and materials to support smooth execution.</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h4>Software Engineer</h4>
+                  <p class="company">Forage | Goldman Sachs Virtual Software Engineering Job Simulation | Remote</p>
+                  <p class="date">March 2025</p>
+                </div>
+                <ul>
+                  <li>Completed a cybersecurity simulation, identifying critical vulnerabilities in password hashing protocols using tools such as Hashcat.</li>
+                  <li>Delivered actionable security recommendations aligned with organizational risk policies, translating findings for non-technical stakeholders.</li>
+                  <li>Drafted a structured technical report recommending modern hashing algorithms and strengthened password policies.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- FIXED: removed spaces in class name + ensured proper closing tags -->
+            <div class="leadership-experience" data-aos="fade-up">
+              <h3>Leadership Experience</h3>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h4>Vice President</h4>
+                  <p class="company">National Society of Black Engineers | Grand Rapids, MI</p>
+                  <p class="date">May 2025 – Present</p>
+                </div>
+                <ul>
+                  <li>Oversee chapter operations supporting 30+ Black STEM students, aiming to increase engagement and retention.</li>
+                  <li>Represent the Calvin chapter at conferences and build relationships with alumni and recruiters to expand opportunities.</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h4>Team Leader</h4>
+                  <p class="company">Calvin University Student Senate | Grand Rapids, MI</p>
+                  <p class="date">May 2024 – Present</p>
+                </div>
+                <ul>
+                  <li>Led a team of 6 senators to advocate for student interests, implement policy changes, and enhance campus initiatives.</li>
+                  <li>Spearheaded student-led initiatives addressing student services, academic policies, and diversity efforts.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div> <!-- /resume-section -->
+        </div> <!-- /content -->
+      </div> <!-- /container -->
+    </section>
+
+    <!-- PROJECTS (FIXED: now a real section with id="projects") -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="content" data-aos="fade-up">
+          <div class="projects-section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                  <h3 class="project-title">AI Career Companion (Poros)</h3>
+                  <div class="project-role">Software Engineer</div>
+
+                  <div class="project-description">
+                    <ul>
+                      <li>Built a React Native (Expo) mobile client with login/signup and persistent sessions, enabling users to manage resumes and track companies/applications.</li>
+                      <li>Implemented cloud-synced resume management (upload, rename, view), improving reliability and access across devices.</li>
+                      <li>Integrated Anthropic and Tavily APIs to support AI-driven resume generation and role-specific tailoring.</li>
+                      <li>Developed a Node.js/Express + TypeScript REST API backed by PostgreSQL (Supabase), designing endpoints for auth, users, resumes, companies, and applications.</li>
+                      <li>Implemented secure authentication and storage using JWT-based auth and persisting resume files as BYTEA in PostgreSQL.</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Expo</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Supabase</span>
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/calvin-cs262-fall2025-teamF/Client"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link"
+                       aria-label="Open Poros project on GitHub">
+                      <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/15yVpFawsHzh6tk4_EW-mM5A1j56DiJcA/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="demo-link"
+                       aria-label="Open Poros demo">
+                      <i class="fas fa-play-circle"></i> View Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                  <h3 class="project-title">AI Medical Translator</h3>
+                  <div class="project-role">Software Engineer (Team of 3)</div>
+
+                  <div class="project-description">
+                    <ul>
+                      <li>Developed a Flask-based medical translation web app to help non-English speakers communicate with healthcare workers, supporting Urdu, Chinese, and Twi.</li>
+                      <li>Collaborated in a 3-person team using Git branching, code review, and feature planning to ship an MVP for intake and triage workflows.</li>
+                      <li>Modularized backend components (Python/Flask, JSON configs) and secured API credentials with environment variables for safer collaboration.</li>
+                      <li>Integrated OpenAI and Google Generative AI models for context-aware translations and built a reusable library of common intake/discharge phrases.</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-tech">
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">Google GenAI</span>
+                    <span class="tech-tag">Git</span>
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/Cpril/medical_translator"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link"
+                       aria-label="Open Medical Translator project on GitHub">
+                      <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1IdhJUhFkfswtTCZ6HC9dVB8G4O2U0RVP/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="demo-link"
+                       aria-label="Open Medical Translator demo">
+                      <i class="fas fa-play-circle"></i> View Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- /projects-grid -->
+          </div> <!-- /projects-section -->
+        </div> <!-- /content -->
+      </div> <!-- /container -->
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
